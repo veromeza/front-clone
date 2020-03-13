@@ -14,6 +14,7 @@ const GET_HOUSES = gql`
       wc
       camas
       huespedes
+      price
       servicios
       description
       createdAt
@@ -54,6 +55,7 @@ function Home() {
                   servicios={house.servicios}
                   description={house.description}
                   banner={house.banner}
+                  price={house.price}
                 />
               ))}
               </div>

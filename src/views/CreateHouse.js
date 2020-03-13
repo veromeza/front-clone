@@ -151,6 +151,21 @@ function CreateHouse(props) {
           </div>
         </div>
 
+        <div className="control-group">
+          <div className="form-group floating-label-form-group controls">
+            <label>Precio por noche</label>
+            <input
+              type="text"
+              className="form-control"
+              name="price"
+              value={inputs.price}
+              onChange={handleInputChange}
+              placeholder="MXN por noche"
+              required
+            />
+          </div>
+        </div>
+
         
         
         <h3>Ubicación</h3>
