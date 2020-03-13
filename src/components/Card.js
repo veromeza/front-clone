@@ -47,8 +47,8 @@ render() {
     {/* <p className="card-text">Anfitrión {" "}
             {this.props.author}
             on {this.props.date}</p> */}
-    <p className="card-text">{this.props.huespedes}{" "} huespedes {this.props.camas}{" "} camas {this.props.wc}{" "} baños, servicios:{" "}  {this.props.servicios}  </p>
-    <p className="card-text"> $ {this.props.price}{" "} MXN por noche </p>
+    <p className="card-text">{this.props.huespedes}{" "} huéspedes, {this.props.camas}{" "} camas, {this.props.wc}{" "} baños, servicios:{" "}  {this.props.servicios}  </p>
+    <h6 className="card-text"> $ {this.props.price}{" "} MXN por noche </h6>
   </div>
 </div>
       </div>

@@ -3,7 +3,8 @@ import { useQuery } from "@apollo/react-hooks";
 import { gql } from "apollo-boost";
 import Layout from '../components/Layout';
 import Card from "../components/Card";
-import Map from '../components/Map';
+import SimpleMap from '../components/Map';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 const GET_HOUSES = gql`
   {
@@ -58,9 +59,10 @@ function Home() {
                   price={house.price}
                 />
               ))}
+              
               </div>
            
-                <Map/>
+                <SimpleMap/>
                 </div>
               
 
