@@ -34,8 +34,8 @@ render() {
 
     <div class="row">
       <div class="col-8 col-sm-6">
-      <div style={{ height: '50vh', width: '100%' }}>
-  <img alt="Casa" src="url(${this.props.banner})"/>
+      <div >
+  <img alt="Casa" src={this.props.banner} style={{  width: 300 }}/>
   </div>
       </div>
       <div class="col-4 col-sm-6">
@@ -47,7 +47,7 @@ render() {
     {/* <p className="card-text">Anfitrión {" "}
             {this.props.author}
             on {this.props.date}</p> */}
-    <p className="card-text">{this.props.description}</p>
+    <p className="card-text">{this.props.huespedes}{" "} huespedes {this.props.camas}{" "} camas {this.props.wc}{" "} baños {this.props.servicios}{" "} servicios  </p>
   </div>
 </div>
       </div>

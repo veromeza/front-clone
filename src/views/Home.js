@@ -10,6 +10,12 @@ const GET_HOUSES = gql`
     getHouses {
       _id
       title
+      banner
+      wc
+      camas
+      huespedes
+      servicios
+      description
       createdAt
       created_by {
         first_name
@@ -42,6 +48,12 @@ function Home() {
                   title={house.title}
                   author={`${house.created_by.first_name} ${house.created_by.last_name} `}
                   date={house.createdAt}
+                  huespedes={house.huespedes}
+                  camas={house.camas}
+                  wc={house.wc}
+                  servicios={house.servicios}
+                  description={house.description}
+                  banner={house.banner}
                 />
               ))}
               </div>

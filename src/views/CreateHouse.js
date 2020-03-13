@@ -88,34 +88,71 @@ function CreateHouse(props) {
             placeholder="Descripción"></textarea>
           </div>
         </div>
+
+        <h3>Características</h3>
+
         <div className="control-group">
           <div className="form-group floating-label-form-group controls">
-            <label>Fechas</label>
+            <label>Huéspedes</label>
             <input
               type="text"
               className="form-control"
-              name="date"
-              value={inputs.date}
+              name="huespedes"
+              value={inputs.huespedes}
               onChange={handleInputChange}
-              placeholder="Fecha del casa"
+              placeholder="¿A cuántas personas puedes hospedar?"
               required
             />
           </div>
         </div>
+
         <div className="control-group">
           <div className="form-group floating-label-form-group controls">
-            <label>Foto</label>
+            <label>Camas</label>
             <input
-              type="file"
+              type="text"
               className="form-control"
-              placeholder="casa"
-              name="banner"
-              onChange={handleBanner}
+              name="camas"
+              value={inputs.camas}
+              onChange={handleInputChange}
+              placeholder="¿Cuántas camas hay?"
               required
             />
           </div>
         </div>
-        <img src={preview} width="100px" />
+
+        <div className="control-group">
+          <div className="form-group floating-label-form-group controls">
+            <label>Baños</label>
+            <input
+              type="text"
+              className="form-control"
+              name="wc"
+              value={inputs.wc}
+              onChange={handleInputChange}
+              placeholder="¿Cuántos baños hay?"
+              required
+            />
+          </div>
+        </div>
+
+        <div className="control-group">
+          <div className="form-group floating-label-form-group controls">
+            <label>Servicios</label>
+            <input
+              type="text"
+              className="form-control"
+              name="servicios"
+              value={inputs.servicios}
+              onChange={handleInputChange}
+              placeholder="Servicios: Wifi, tv, aire acondicionado, calefacción, elementos básicos"
+              required
+            />
+          </div>
+        </div>
+
+        
+        
         <h3>Ubicación</h3>
         <div className="control-group">
           <div className="form-group floating-label-form-group controls">
@@ -202,6 +239,21 @@ function CreateHouse(props) {
             />
           </div>
         </div>
+
+        <div className="control-group">
+          <div className="form-group floating-label-form-group controls">
+            <label>Foto</label>
+            <input
+              type="file"
+              className="form-control"
+              placeholder="casa"
+              name="banner"
+              onChange={handleBanner}
+              required
+            />
+          </div>
+        </div>
+        <img src={preview} width="100px" />
 
         <button type="submit" className="btn btn-primary" >
             Submit
